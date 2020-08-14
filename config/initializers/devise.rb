@@ -261,8 +261,6 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
-  config.omniauth :instagram, "1052352415160810", "7caa132ed2ec445a5a0b858c1ef04be0",
-    callback_url: "http://localhost:3000/users/auth/instagram/callback"
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

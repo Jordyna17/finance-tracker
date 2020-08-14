@@ -27,6 +27,7 @@ gem 'iex-ruby-client'
 gem "font-awesome-rails"
 gem 'twitter'
 gem 'omniauth-instagram'
+gem 'instagram_basic_display_api'
 
 
 

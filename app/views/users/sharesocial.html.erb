@@ -1,11 +1,21 @@
-<h1>Post to twitter</h1>
+<h1>View Instagram Data</h1>
 
-<!-- <a href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-class="twitter-share-button"
- data-text="sample"
- data-via="example" data-hashtags="test"
- data-related="examplerecom"
- data-show-count="false">Tweet</a>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+<p>Username: <%= @username %></p>
 
-<%= link_to "Sign in with instagram", user_instagram_omniauth_authorize_path %>
+<p>Number of Posts: <%= @numberofposts %></p>
+
+<div class="container-fluid">
+  <div class="row">
+    <% @viewmedia.each do |picture| %>
+      <div class="col-sm-4" style="float:left">
+        <div class="card mb-2">
+          <%= image_tag picture.media_url, :class => "card-img-top"  %>
+            <div class="card-body">
+              <p class="card-text"> Image type: <%= picture.media_type %> </p>
+              <p class="card-text">Number of Likes: "A buisness account would be able to get this data"</p>
+            </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

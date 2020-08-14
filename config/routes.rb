@@ -2,7 +2,8 @@ Rails.application.routes.draw do
 
   resources :user_stocks
   devise_for :users
-  
+
+
   #devise_for :u_sers
   root 'welcome#index'
 
